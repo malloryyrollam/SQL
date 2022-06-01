@@ -1,0 +1,24 @@
+CREATE TABLE Store (id INTEGER PRIMARY KEY, ItemName TEXT, Department TEXT, Aisle INTEGER, Price INTEGER);
+
+INSERT INTO Store VALUES (1, "Blue Shirt", "Apparel", 1, 15);
+INSERT INTO Store VALUES (2, "Red Shirt", "Apparel", 1, 15) ;
+INSERT INTO Store VALUES (3, "Sandals", "Footwear", 4, 25);
+INSERT INTO Store VALUES (4, "Earrings", "Jewelry", 6, 15);
+INSERT INTO Store VALUES (5, "Khaki Shorts", "Apparel", 3, 20);
+INSERT INTO Store VALUES (6, "Jeans", "Apparel", 2, 35);
+INSERT INTO Store VALUES (7, "Orange Hat", "Accessories", 3, 10);
+INSERT INTO Store VALUES (8, "Brown Belt", "Accessories", 3, 20);
+INSERT INTO Store VALUES (9, "Green Shirt", "Accessories", 1, 15);
+INSERT INTO Store VALUES (10, "Sneakers", "Footwear", 4, 50);
+INSERT INTO Store VALUES (11, "Red Hat", "Accessories", 3, 10);
+INSERT INTO Store VALUES (12, "Yellow Shirt", "Apparel", 1, 15);
+INSERT INTO Store VALUES (13, "Ring", "Jewelry", 6, 10);
+INSERT INTO Store VALUES (14, "Purple Shirt", "Apparel", 1, 15);
+INSERT INTO Store VALUES (15, "Black Belt", "Accessories", 3, 20);
+
+To see each item in order by price from lowest to highest
+SELECT * FROM Store ORDER BY Price asc;
+
+To see only items in the Accessories department
+SELECT * FROM Store where Department = "Accessories"
+
